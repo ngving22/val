@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffebee;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Yeseva One', serif;
+        }
+
+        .content {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px; /* This creates space between the buttons */
+            margin-top: 20px; /* This adds some space above the button container */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Yay! You said Yes! 💖</h1>
+        <p>Thank you maganda! Mwuah. 💌</p>
+        <div class="button-container">
+            <button onclick="goBack()">Go Back</button>
+            <button onclick="goVideo()">Click Me</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "val.html";
+        }
+        function goVideo() {
+            window.open('https://www.capcut.com/s/CevS8ZHG668Qxgwb/', '_blank');
+        }
+    </script>
+
+</body>
+</html>
